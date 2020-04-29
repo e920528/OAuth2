@@ -1,0 +1,44 @@
+{
+  "name": "oauth2",
+  "version": "1.0.0",
+  "description": "oauth2 server",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js --ignore-path .gitignore ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e920528/OAuth2.git"
+  },
+  "keywords": [
+    "koa2",
+    "redis",
+    "mongodb",
+    "oauth2"
+  ],
+  "author": "Evis Cheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/e920528/OAuth2/issues"
+  },
+  "homepage": "https://github.com/e920528/OAuth2#readme",
+  "dependencies": {
+    "@hapi/boom": "^9.1.0",
+    "crypto": "^1.0.1",
+    "koa": "^2.11.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^8.0.8",
+    "uuid": "^7.0.3",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5"
+  }
+}
